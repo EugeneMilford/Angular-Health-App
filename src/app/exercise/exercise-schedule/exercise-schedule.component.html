@@ -1,1 +1,20 @@
-<p>exercise-schedule works!</p>
+<div class="row">
+  <div class="col-12">
+    <button class="btn btn-primary">New Exercise Schedule</button>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-12">
+    <a href="#" class="list-group-item clearfix"
+       *ngFor="let ex of exercise">
+      <div class="float-left">
+        <h4 class="list-group-item-heading">{{ ex.name }}</h4>
+        <p class="list-group-item-text">{{ ex.description }}</p>
+        <p class="list-group-item-text">{{ ex.starttime }}</p>
+        <p class="list-group-item-text">{{ ex.endtime }}</p>
+        <p class="list-group-item-text">{{ ex.duration }}</p>
+      </div>
+    </a>
+  </div>
+</div>

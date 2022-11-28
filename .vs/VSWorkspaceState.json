@@ -2,8 +2,14 @@
   "ExpandedNodes": [
     "",
     "\\src",
-    "\\src\\app"
+    "\\src\\app",
+    "\\src\\app\\exercise",
+    "\\src\\app\\exercise\\exercise-schedule",
+    "\\src\\app\\foods",
+    "\\src\\app\\foods\\foods-list",
+    "\\src\\app\\sleep",
+    "\\src\\app\\sleep\\sleep-schedule"
   ],
-  "SelectedNode": "\\src\\app\\foods",
+  "SelectedNode": "\\src\\app\\sleep\\sleep-schedule\\sleep-schedule.component.ts",
   "PreviewInSolutionExplorer": false
 }

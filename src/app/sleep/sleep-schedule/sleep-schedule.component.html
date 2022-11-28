@@ -1,1 +1,18 @@
-<p>sleep-schedule works!</p>
+<div class="row">
+  <div class="col-12">
+    <button class="btn btn-primary">New Sleep Schedule</button>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-12">
+    <a href="#" class="list-group-item clearfix"
+       *ngFor="let slee of sleep">
+      <div class="float-left">
+        <h4 class="list-group-item-heading">{{ slee.starttime }}</h4>
+        <p class="list-group-item-text">{{ slee.endtime }}</p>
+        <p class="list-group-item-text">{{ slee.duration }}</p>
+      </div>
+    </a>
+  </div>
+</div>
