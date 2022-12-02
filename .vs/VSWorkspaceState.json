@@ -4,12 +4,12 @@
     "\\src",
     "\\src\\app",
     "\\src\\app\\exercise",
-    "\\src\\app\\exercise\\exercise-schedule",
-    "\\src\\app\\foods",
-    "\\src\\app\\foods\\foods-list",
+    "\\src\\app\\footer",
+    "\\src\\app\\header",
+    "\\src\\app\\home",
     "\\src\\app\\sleep",
     "\\src\\app\\sleep\\sleep-schedule"
   ],
-  "SelectedNode": "\\src\\app\\sleep\\sleep-schedule\\sleep-schedule.component.ts",
+  "SelectedNode": "\\src\\app\\home\\home.component.ts",
   "PreviewInSolutionExplorer": false
 }

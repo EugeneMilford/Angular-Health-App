@@ -15,6 +15,7 @@ import { SleepScheduleComponent } from './sleep/sleep-schedule/sleep-schedule.co
 import { SleepEditComponent } from './sleep/sleep-edit/sleep-edit.component';
 import { ExerciseEditComponent } from './exercise/exercise-edit/exercise-edit.component';
 import { ExerciseScheduleComponent } from './exercise/exercise-schedule/exercise-schedule.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { ExerciseScheduleComponent } from './exercise/exercise-schedule/exercise
     ExerciseScheduleComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
