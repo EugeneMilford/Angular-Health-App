@@ -1,20 +1,28 @@
-<div class="row">
-  <div class="col-12">
-    <button class="btn btn-primary">New Exercise Schedule</button>
-  </div>
-</div>
+<h4>Workout list</h4>
+<p>Find all your saved workouts and more</p>
+<br />
 
 <div class="row">
   <div class="col-12">
     <a href="#" class="list-group-item clearfix"
        *ngFor="let ex of exercise">
-      <div class="float-left">
-        <h4 class="list-group-item-heading">{{ ex.name }}</h4>
-        <p class="list-group-item-text">{{ ex.description }}</p>
-        <p class="list-group-item-text">{{ ex.starttime }}</p>
-        <p class="list-group-item-text">{{ ex.endtime }}</p>
-        <p class="list-group-item-text">{{ ex.duration }}</p>
+      <div class="card" style="width: 16rem;">
+        <div class="card-body">
+          <h5 class="card-title">{{ ex.name }}</h5>
+          <p class="card-text">{{ ex.description }}</p>
+          <p class="card-text">{{ ex.starttime }}</p>
+          <p class="card-text">{{ ex.endtime }}</p>
+          <p class="card-text">{{ ex.duration }}</p>
+        </div>
       </div>
     </a>
+  </div>
+</div>
+
+<br />
+
+<div class="row">
+  <div class="col-12">
+    <button class="btn btn-primary">New Workout</button>
   </div>
 </div>

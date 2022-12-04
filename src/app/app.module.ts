@@ -16,6 +16,9 @@ import { SleepEditComponent } from './sleep/sleep-edit/sleep-edit.component';
 import { ExerciseEditComponent } from './exercise/exercise-edit/exercise-edit.component';
 import { ExerciseScheduleComponent } from './exercise/exercise-schedule/exercise-schedule.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ContactComponent } from './contact/contact.component';
+import { BlogComponent } from './blog/blog.component';
+import { FoodsDetailComponent } from './foods/foods-detail/foods-detail.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +35,10 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     SleepScheduleComponent,
     SleepEditComponent,
     ExerciseEditComponent,
-    ExerciseScheduleComponent
+    ExerciseScheduleComponent,
+    ContactComponent,
+    BlogComponent,
+    FoodsDetailComponent
   ],
   imports: [
     BrowserModule,

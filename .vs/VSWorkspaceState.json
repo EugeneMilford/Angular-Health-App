@@ -3,13 +3,14 @@
     "",
     "\\src",
     "\\src\\app",
+    "\\src\\app\\blog",
+    "\\src\\app\\contact",
     "\\src\\app\\exercise",
-    "\\src\\app\\footer",
-    "\\src\\app\\header",
-    "\\src\\app\\home",
-    "\\src\\app\\sleep",
-    "\\src\\app\\sleep\\sleep-schedule"
+    "\\src\\app\\exercise\\exercise-schedule",
+    "\\src\\app\\foods",
+    "\\src\\app\\foods\\foods-detail",
+    "\\src\\app\\foods\\foods-list"
   ],
-  "SelectedNode": "\\src\\app\\home\\home.component.ts",
+  "SelectedNode": "\\src\\app\\home\\home.component.html",
   "PreviewInSolutionExplorer": false
 }

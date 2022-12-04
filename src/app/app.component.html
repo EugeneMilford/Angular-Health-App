@@ -1,5 +1,10 @@
-<app-header></app-header>
+<app-header (featureSelected)="onNavigate($event)"></app-header>
 
-<app-home></app-home>
+<app-home *ngIf="loadedFeature === 'home'"></app-home>
+<app-foods *ngIf="loadedFeature === 'foods'"></app-foods>
+<app-exercise *ngIf="loadedFeature === 'exercise'"></app-exercise>
+<app-sleep *ngIf="loadedFeature === 'sleep'"></app-sleep>
+<app-blog *ngIf="loadedFeature === 'blog'"></app-blog>
+<app-contact *ngIf="loadedFeature === 'contact'"></app-contact>
 
 <app-footer></app-footer>

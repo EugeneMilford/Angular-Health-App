@@ -1,25 +1,28 @@
-<div class="row">
-  <div class="col-12">
-    <button class="btn btn-primary">New Food List</button>
-  </div>
-</div>
+<h4>Foods List</h4>
+<p>Find all your saved foods and more</p>
+<br />
 
 <div class="row">
   <div class="col-12">
     <a href="#" class="list-group-item clearfix"
        *ngFor="let foo of foods">
-      <div class="float-left">
-        <h4 class="list-group-item-heading">{{ foo.name }}</h4>
-        <p class="list-group-item-text">{{ foo.description }}</p>
-        <p class="list-group-item-text">{{ foo.time }}</p>
+      <div class="card" style="width: 16rem;">
+        <img src="{{ foo.imagePath }}" class="card-img-top" alt="Foods">
+        <div class="card-body">
+          <h5 class="card-title">{{ foo.name }}</h5>
+          <p class="card-text">{{ foo.description }}</p>
+          <p class="card-text">{{ foo.time }}</p>
+        </div>
       </div>
-      <span class="float-right">
-        <img src="{{ foo.imagePath }}"
-             alt="{{ foo.name }}"
-             class="img-fluid"
-             style="max-height: 50px;" />
-      </span>
     </a>
+  </div>
+</div>
+
+<br />
+
+<div class="row">
+  <div class="col-12">
+    <button class="btn btn-primary">New Food</button>
   </div>
 </div>
 
