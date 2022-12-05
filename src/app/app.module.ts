@@ -19,6 +19,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ContactComponent } from './contact/contact.component';
 import { BlogComponent } from './blog/blog.component';
 import { FoodsDetailComponent } from './foods/foods-detail/foods-detail.component';
+import { FoodsItemComponent } from './foods/foods-item/foods-item.component';
+import { ExerciseItemComponent } from './exercise/exercise-item/exercise-item.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -38,11 +41,14 @@ import { FoodsDetailComponent } from './foods/foods-detail/foods-detail.componen
     ExerciseScheduleComponent,
     ContactComponent,
     BlogComponent,
-    FoodsDetailComponent
+    FoodsDetailComponent,
+    FoodsItemComponent,
+    ExerciseItemComponent
   ],
   imports: [
     BrowserModule,
-    NgbModule
+    NgbModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

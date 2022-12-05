@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Sleep } from '../sleep.model';
+import { SleepService } from '../sleep.service';
 
 @Component({
   selector: 'app-sleep-schedule',
@@ -8,13 +9,12 @@ import { Sleep } from '../sleep.model';
 })
 export class SleepScheduleComponent implements OnInit {
 
-  sleep: Sleep[] = [
-    new Sleep('21:00', '06:00', '9 hrs')
-  ];
+  sleep: Sleep[];
 
-  constructor() { }
+  constructor(private sleepService: SleepService) { }
 
   ngOnInit(): void {
+    this.sleep = this.sleepService.getSleep();
   }
 
 }

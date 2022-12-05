@@ -4,17 +4,7 @@
 
 <div class="row">
   <div class="col-12">
-    <a href="#" class="list-group-item clearfix"
-       *ngFor="let foo of foods">
-      <div class="card" style="width: 16rem;">
-        <img src="{{ foo.imagePath }}" class="card-img-top" alt="Foods">
-        <div class="card-body">
-          <h5 class="card-title">{{ foo.name }}</h5>
-          <p class="card-text">{{ foo.description }}</p>
-          <p class="card-text">{{ foo.time }}</p>
-        </div>
-      </div>
-    </a>
+    <app-foods-detail *ngFor="let fooEl of foods" [foo]="fooEl" (foodSelected)="onFoodSelected(fooEl)"></app-foods-detail>
   </div>
 </div>
 

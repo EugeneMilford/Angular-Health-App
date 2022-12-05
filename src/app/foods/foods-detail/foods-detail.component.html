@@ -1,1 +1,28 @@
 <p>Details of food</p>
+
+<br />
+
+<!--<div class="row">
+  <div class="col-12">
+    <img src="{{ foo.imagePath }}" alt="food" class="img-responsive" />
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-12">
+    <h4>{{ foo.name }}</h4>
+  </div>
+</div>-->
+
+
+<a href="#" class="list-group-item clearfix"
+   (click)="onSelected()">
+  <div class="card" style="width: 16rem;">
+    <img src="{{ foo.imagePath }}" class="card-img-top" alt="Foods">
+    <div class="card-body">
+      <h5 class="card-title">{{ foo.name }}</h5>
+      <p class="card-text">{{ foo.description }}</p>
+      <p class="card-text">{{ foo.time }}</p>
+    </div>
+  </div>
+</a>

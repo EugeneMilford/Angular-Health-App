@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { Food } from '../food.model';
+import { FoodService } from '../food.service';
 
 @Component({
   selector: 'app-foods-list',
@@ -8,18 +9,19 @@ import { Food } from '../food.model';
 })
 export class FoodsListComponent implements OnInit {
 
-  foods: Food[] = [
-    new Food(
-      'yogurt',
-      'A great way to start the day',
-      '07:00',
-      'https://post.healthline.com/wp-content/uploads/2021/10/fruit-berries-yogurt-732x549-thumbnail.jpg')
-  ];
+  @Output() foodWasSelected = new EventEmitter<Food>();
+  foods: Food[];
 
 
-  constructor() { }
+  constructor(private foodService: FoodService) {
+  }
 
   ngOnInit(): void {
+    this.foods = this.foodService.getFoods();
+  }
+
+  onFoodSelected(food: Food) {
+    this.foodWasSelected.emit(food);
   }
 
 }
